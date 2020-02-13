@@ -16,14 +16,14 @@ class Student():
 # PL code start here (Crud )
 while (True):
     print("1.Add Student\n2.Search Student\n3.Update Student\n4.Delete Student\nExit press 0")
-    ch=input('Enter your choice')
-    if ch=='1':
+    ch=int(input('Enter your choice'))
+    if ch==1:
         stdt=Student()
         stdt.id=int(input('Enter your id:  '))
         stdt.name=input('Enter your Name:  ')
         stdt.AddStudent()
         print('Student Added successfully')
-    if ch=='5':
+    if ch==5:
         stdt = Student()
         s =stdt.showAll()
         for stu in s:
